@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        h1 {
+            height: 6rem;
+            text-align: center;
+            background-color: rgba(0, 149, 255, 0.516);
+            color: rgb(255, 0, 230);
+        }
+
+        th {
+            font-size: 2rem; /* Reduced font size for better visibility */
+            font-weight: 600;
+            color: brown;
+        }
+
+        td {
+            color: brown;
+            font-size: 2rem; /* Reduced font size for better visibility */
+        }
+
+        body {
+            background-color: rgb(0, 255, 162);
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+        }
+
+        button {
+            font-size: 2rem; /* Reduced font size for better visibility */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <a href=""><img src="c:\Users\hp.pc\Downloads\modern-company-logo-design-vector.jpg"></a>
+    </div>
+    <h1>Employee Information</h1>
+</div>
+<table border="1">
+    <tbody>
+    <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Position</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Salary</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Monika</td>
+        <td>01</td>
+        <td>Manager</td>
+        <td>Delhi</td>
+        <td>Sector 16</td>
+        <td>
+            <input type="text" id="emp1" class="emp" style="width: 200px; height: 100px; font-size: 2rem;">
+            <button onclick="show1()">Show/Hide</button>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Anubhav</td>
+        <td>02</td>
+        <td>HR</td>
+        <td>UP</td>
+        <td>Merut</td>
+        <td>
+            <input type="text" id="emp2" class="emp" style="width: 200px; height: 100px; font-size: 2rem;">
+            <button onclick="show2()">Show/Hide</button>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sogal</td>
+        <td>03</td>
+        <td>Sales Manager</td>
+        <td>Noida</td>
+        <td>Sector 18</td>
+        <td>
+            <input type="text" id="emp3" class="emp" style="width: 200px; height: 100px; font-size: 2rem;">
+            <button onclick="show3()">Show/Hide</button>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Rahul</td>
+        <td>04</td>
+        <td>Assistant</td>
+        <td>Haryana</td>
+        <td>Hisar</td>
+        <td>
+            <input type="text" id="emp4" class="emp" style="width: 200px; height: 100px; font-size: 2rem;">
+            <button onclick="show4()">Show/Hide</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<script>
+    let data1 = 100000;
+    let data2 = 200000;
+    let data3 = 300000;
+    let data4 = 400000;
+
+    function show1() {
+        let emp1 = document.getElementById("emp1");
+        if (emp1.value != data1) {
+            emp1.value = data1;
+        } else {
+            emp1.value = "#####";
+        }
+    }
+
+    function show2() {
+        let emp2 = document.getElementById("emp2");
+        if (emp2.value != data2) {
+            emp2.value = data2;
+        } else {
+            emp2.value = "#####";
+        }
+    }
+
+    function show3() {
+        let emp3 = document.getElementById("emp3");
+        if (emp3.value != data3) {
+            emp3.value = data3;
+        } else {
+            emp3.value = "#####";
+        }
+    }
+
+    function show4() {
+        let emp4 = document.getElementById("emp4");
+        if (emp4.value != data4) {
+            emp4.value = data4;
+        } else {
+            emp4.value = "#####";
+        }
+    }
+</script>
+</body>
+</html>
